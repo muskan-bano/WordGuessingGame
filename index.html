@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="links">
+      <h3><span>W</span>ordFinder</h3>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="Loginpage.html">SIGN OUT</a></li>
+        <!-- Added Login link -->
+      </ul>
+    </div>
+    <section>
+      <h2 class="animate__animated animate__bounceInDown">
+        Guess the word da!
+      </h2>
+
+      <div class="popup" onclick="myFunction()">
+        <button class="animate__animated animate__flash">CHOOSE LEVEL</button>
+        <span class="popuptext" id="myPopup">
+          <div class="btn-group">
+            <button><a class="game" href="easylevel.html">Easy</a></button>
+            <button><a class="game" href="mediumlevel.html">Medium</a></button>
+            <button><a class="game" href="hardlevel.html">Hard</a></button>
+          </div>
+        </span>
+      </div>
+
+      <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+      </script>
+    </section>
+  </body>
+</html>
